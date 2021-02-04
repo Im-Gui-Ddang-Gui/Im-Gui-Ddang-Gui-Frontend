@@ -7,7 +7,7 @@ export const CategoryStyle = styled.div`
 `;
 
 export const TagStyle = styled.div`
-    width: 87px;
+    width: 87.4px;
     height: 30px;
     text-align: center;
     display: table-cell; 

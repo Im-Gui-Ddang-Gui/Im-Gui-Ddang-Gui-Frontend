@@ -20,13 +20,15 @@ export const Title = styled.div`
 `
 
 export const Write = styled.div`
-    padding-top: 30px;
+    cursor: pointer;
+    width: 55px;
+    margin-top: 30px;
     font-size: 20px;
 `
 
 export const HeaderLogo = styled.div`
     display: block;
-    float: right;
+    height: 150px;
 
     img {
         

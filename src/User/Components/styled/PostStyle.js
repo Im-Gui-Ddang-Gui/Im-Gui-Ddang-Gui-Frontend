@@ -40,7 +40,7 @@ export const PostHeader = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-bottom: 10px;
 `
 
@@ -84,18 +84,47 @@ export const PostContents = styled.textarea`
     border: none;
     resize: none;
     padding: 15px;
-    &:focus {
-        border: none;
-    }
 `
 
-export const PostFile = styled.input`
+export const PostFileBox = styled.div`
     width: 100%;
     background-color: #ECECEC;
     font-size: 15px;
     border-radius: 10px;
     padding: 0 10px;
     margin: 10px 0 20px 0; 
+`
+
+export const PostFile = styled.input`
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+`
+
+export const PostFileName = styled.input`
+    display: inline-block;
+    height: 35px;
+    font-size:18px; 
+    padding: 0 10px;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    outline: none;
+`
+
+export const PostFileLabel = styled.label`
+    display: inline-block;
+    padding: 8px 20px;
+    color: #999;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
 `
 
 export const PostButtonBox = styled.div`
@@ -110,5 +139,8 @@ export const PostButton = styled.button`
     height: 30px;
     text-align: center;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 `

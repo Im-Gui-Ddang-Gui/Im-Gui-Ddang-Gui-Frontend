@@ -67,6 +67,7 @@ export const PostNickName = styled.input`
 
 export const PostTag = styled.div`
     width: 17%;
+    height: 30px;
     text-align: center;
     align-items: center;
     background-color: #ECECEC;
@@ -102,6 +103,14 @@ export const PostFile = styled.input`
     padding: 0;
     overflow: hidden;
     border: 0;
+`
+
+export const PostFileEx = styled.input`
+    display: inline-block;
+    padding: 8px 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 5px;
 `
 
 export const PostFileName = styled.input`

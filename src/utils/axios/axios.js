@@ -2,7 +2,6 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 
 export const MainURL = "http://15.164.102.79:8080";
-export const FileURL = "http://15.164.102.79:3000";
 
 export function request(method, url, header, data) {
   return axios({

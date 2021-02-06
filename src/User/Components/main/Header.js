@@ -5,7 +5,8 @@ import IGDG from '../../../assets/igdg-img.png';
 
 const Header = (props) => {
     const onPostModalOn = () => {
-        props.onClick("block");
+        props.setPostModal("visible");
+        props.setHeight("500px");
     }
 
     return (

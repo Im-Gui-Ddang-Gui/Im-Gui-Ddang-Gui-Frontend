@@ -5,6 +5,7 @@ const PostModal = (props) => {
     const [ writeTitle, setWriteTitle ] = useState(null);
     const [ writeNickName, setWriteNickName ] = useState(null);
     const [ writeContents, setWriteContents] = useState("");
+    const [ writeFile, setWriteFile ] = useState(null);
 
     const onClose = () => {
         props.setPostModal("hidden");
@@ -21,6 +22,10 @@ const PostModal = (props) => {
 
     const onContent = (e) => {
         setWriteContents(e.target.value);
+    }
+
+    const onFile = (e) => {
+        setWriteFile(e.target.files[0])
     }
 
     return (
@@ -50,9 +55,13 @@ const PostModal = (props) => {
                     />
                     {writeContents.length} / 500
 
-                    <S.PostFile 
-                        type="file"
-                    />
+                    <S.PostFileBox>
+                        <S.PostFileName value="파일선택" readOnly/>
+
+                        <S.PostFileLabel for="file">업로드</S.PostFileLabel> 
+                        <S.PostFile type="file" id="file" /> 
+                        
+                    </S.PostFileBox>
 
                     <S.PostButtonBox>
 

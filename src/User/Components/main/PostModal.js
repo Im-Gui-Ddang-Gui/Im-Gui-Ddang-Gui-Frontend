@@ -5,7 +5,8 @@ const PostModal = (props) => {
     const [ writeTitle, setWriteTitle ] = useState(null);
     const [ writeNickName, setWriteNickName ] = useState(null);
     const [ writeContents, setWriteContents] = useState("");
-    const [ writeFile, setWriteFile ] = useState(null);
+    const [ writeFile, setWriteFile ] = useState("파일선택");
+    const [ writeTag, setWriteTag ] = useState("선택");
 
     const onClose = () => {
         props.setPostModal("hidden");
@@ -28,6 +29,8 @@ const PostModal = (props) => {
         setWriteFile(e.target.files[0])
     }
 
+    console.log(writeTitle, writeNickName, writeContents, writeFile)
+
     return (
         <>
             <S.PostModalStyle visibility={props.postModal}>
@@ -35,12 +38,25 @@ const PostModal = (props) => {
                     <S.Post>
 
                     <S.PostHeader>
-                        <S.PostTitle type="text" minLength="1" maxLength="50" placeholder="제목 1~50자" required/>
+                        <S.PostTitle 
+                            type="text" 
+                            minLength="1" 
+                            maxLength="50" 
+                            placeholder="제목 1~50자" 
+                            required
+                            onChange={onTitle}
+                        />
 
-                        <S.PostNickName type="text" maxLength="5" />
+                        <S.PostNickName 
+                            type="text" 
+                            maxLength="5" 
+                            onChange={onNickName}
+                        />
 
                         <S.PostTag>
-                            tag
+                            
+                                {writeTag}
+                            
                         </S.PostTag>
                     </S.PostHeader>
 
@@ -56,10 +72,16 @@ const PostModal = (props) => {
                     {writeContents.length} / 500
 
                     <S.PostFileBox>
-                        <S.PostFileName value="파일선택" readOnly/>
+
+                        {/* <S.PostFileName 
+                            value="파일"
+                            readOnly
+                            />
 
                         <S.PostFileLabel for="file">업로드</S.PostFileLabel> 
-                        <S.PostFile type="file" id="file" /> 
+                        <S.PostFile type="file" id="file" onChange={onFile}/>  */}
+
+                        <S.PostFileEx type="file" id="file" onChange={onFile}/>
                         
                     </S.PostFileBox>
 

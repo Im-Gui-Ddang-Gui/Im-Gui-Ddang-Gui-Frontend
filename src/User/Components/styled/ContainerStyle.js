@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerStyle = styled.div`
     background-color: white;
     width: 100%;
-    height: 500px;
+    height: 550px;
 `;
 
 export const ContainerHeader = styled.div`
@@ -48,4 +48,12 @@ export const Contents = styled.div`
     overflow: auto;
     border: 1px solid black;
     padding: 10px;
+`
+
+export const ReportButton = styled.button`
+    width: 70px;
+`
+
+export const CommentButton = styled.button`
+    width: 70px;
 `

@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from './Container';
+import Container from '../Container/Container';
 import * as S from '../styled/BodyStyle';
 
 const Body = () => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as S from '../styled/Mainstyle';
 import Header from './Header';
 import Body from './Body';
-import PostModal from './PostModal';
+import PostModal from '../Modal/PostModal';
 
 const Main = () => {
     const [ postModal, setPostModal ] = useState("hidden");
@@ -23,7 +23,6 @@ const Main = () => {
                     setHeight={(e)=>setHeight(e)}
                 />
                 <Body />
-
                 
             </S.Mainstyle>
         </>

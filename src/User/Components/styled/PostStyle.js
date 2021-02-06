@@ -30,7 +30,7 @@ export const PostModal = styled.div`
     background-color: #ffffff;
 `
 
-export const Post = styled.div`
+export const Post = styled.form`
     width: 90%;
     margin: 0 auto;
 `

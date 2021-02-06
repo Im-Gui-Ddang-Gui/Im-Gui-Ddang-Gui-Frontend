@@ -36,11 +36,43 @@ export const Post = styled.div`
 `
 
 export const PostHeader = styled.div`
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 10px;
 `
 
+export const PostTitle = styled.input`
+    background-color: #ECECEC;
+    width: 55%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+`
 
+export const PostNickName = styled.input`
+    width: 17%;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 10px;
+`
+
+export const PostTag = styled.div`
+    width: 17%;
+    text-align: center;
+    align-items: center;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    font-size: 20px;
+`
 
 export const PostContents = styled.textarea`
     width: 100%;
@@ -51,9 +83,19 @@ export const PostContents = styled.textarea`
     outline: none;
     border: none;
     resize: none;
+    padding: 15px;
     &:focus {
         border: none;
     }
+`
+
+export const PostFile = styled.input`
+    width: 100%;
+    background-color: #ECECEC;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 10px 0 20px 0; 
 `
 
 export const PostButtonBox = styled.div`

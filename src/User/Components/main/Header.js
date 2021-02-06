@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../styled/HeaderStyle';
-import Category from './Category';
+import Category from '../Category/Category'
 import IGDG from '../../../assets/igdg-img.png';
 
 const Header = (props) => {

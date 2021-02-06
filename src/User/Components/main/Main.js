@@ -5,16 +5,26 @@ import Body from './Body';
 import PostModal from './PostModal';
 
 const Main = () => {
-    const [ postModal, setPostModal ] = useState("visible");
-    console.log(postModal);
+    const [ postModal, setPostModal ] = useState("hidden");
+    const [ height, setHeight ] = useState("0")
 
     return (
         <>
+            <PostModal 
+                setPostModal={(e)=>setPostModal(e)}
+                setHeight={(e)=>setHeight(e)}
+                postModal={postModal}
+                height={height}
+            />
+
             <S.Mainstyle>
-                <Header onClick={(e)=>setPostModal(e)}/>
+                <Header 
+                    setPostModal={(e)=>setPostModal(e)}
+                    setHeight={(e)=>setHeight(e)}
+                />
                 <Body />
 
-                <PostModal postModal={postModal}/>
+                
             </S.Mainstyle>
         </>
     )

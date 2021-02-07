@@ -13,6 +13,18 @@ const Body = (props) => {
                     commentModal={props.commentModal}
                     commentheight={props.commentheight}
                 />
+                <Container 
+                    setCommentModal={(e)=>props.setCommentModal(e)}
+                    setCommentHeight={(e)=>props.setCommentHeight(e)}
+                    commentModal={props.commentModal}
+                    commentheight={props.commentheight}
+                />
+                <Container 
+                    setCommentModal={(e)=>props.setCommentModal(e)}
+                    setCommentHeight={(e)=>props.setCommentHeight(e)}
+                    commentModal={props.commentModal}
+                    commentheight={props.commentheight}
+                />
             </S.BodyStyle>
         </>
     )

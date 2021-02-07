@@ -7,7 +7,7 @@ const PostModal = (props) => {
     const [ writeNickName, setWriteNickName ] = useState(null);
     const [ writeContents, setWriteContents] = useState("");
     const [ writeFile, setWriteFile ] = useState("파일선택");
-    const [ writeTag, setWriteTag ] = useState("선택");
+    const [ writeTag, setWriteTag ] = useState("태그");
 
     const onClose = () => {
         props.setPostModal("hidden");
@@ -30,8 +30,10 @@ const PostModal = (props) => {
         setWriteFile(e.target.files[0])
     }
 
-    const onSendPost = () => {
-        PostApi()
+    const onSendPost = (e) => {
+        e.preventDefault();
+        console.log(writeContents);
+        //PostApi()
     }
 
     const PostApi = async () => {
@@ -66,6 +68,7 @@ const PostModal = (props) => {
                         />
 
                         <S.PostNickName 
+                            placeholder="별명"
                             type="text" 
                             maxLength="5" 
                             onChange={onNickName}
@@ -81,6 +84,7 @@ const PostModal = (props) => {
                     
 
                     <S.PostContents 
+                        placeholder="내용을 입력하세요"
                         cols="50"
                         rows="11"
                         onChange={onContent}
@@ -106,7 +110,12 @@ const PostModal = (props) => {
                     <S.PostButtonBox>
 
                         <S.PostButton>완료</S.PostButton>
-                        <S.PostButton onClick={onClose}>취소</S.PostButton>
+                        <S.PostButton 
+                            type="button"
+                            onClick={onClose}
+                        >
+                            취소
+                        </S.PostButton>
                         
                     </S.PostButtonBox>
 

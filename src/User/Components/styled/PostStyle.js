@@ -4,8 +4,10 @@ export const PostModalStyle = styled.div`
     position: absolute;
     z-index: 99;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);

@@ -50,10 +50,30 @@ export const Contents = styled.div`
     padding: 10px;
 `
 
-export const ReportButton = styled.button`
-    width: 70px;
+export const ButtonBox = styled.div`
+    width: 90%;
+    margin: 0 auto;
 `
 
-export const CommentButton = styled.button`
-    width: 70px;
+export const Button = styled.button`
+    width: 200px;
+    background-color: #ECECEC;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+`
+
+export const RightButton = styled.button`
+    width: 200px;
+    margin-left: 149px;
+    background-color: #ECECEC;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
 `

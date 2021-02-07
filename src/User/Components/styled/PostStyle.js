@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const PostModalStyle = styled.div`
-    position: absolute;
+    position: fixed;
     z-index: 99;
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     visibility: ${({ visibility }) => visibility};

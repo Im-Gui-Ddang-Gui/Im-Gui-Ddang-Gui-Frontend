@@ -34,3 +34,87 @@ export const Comment = styled.form`
     width: 90%;
     margin: 0 auto;
 `
+
+export const ContainerBox = styled.div`
+    margin-top: 30px;
+    width: 100%;
+    height: 315px;
+    overflow: auto;
+`
+
+export const CommentContainer = styled.div`
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 60px;
+    background-color: #ECECEC;
+    border-radius: 10px;
+    display: flex;
+`
+
+export const CommentHeader = styled.div`
+    
+    align-items: center;
+    width: 30%;
+    padding: 20px 10px;
+`
+
+export const CommentBody = styled.div`
+    width: 70%;
+    padding: 10px 10px;
+    overflow: auto;
+`
+
+export const CommentWrite = styled.div`
+    margin-top: 25px;
+    width: 100%;
+    height: 60px;
+`
+
+export const WriteBox = styled.form`
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+`
+
+export const WriteInputBox = styled.div`
+    width: 70%;
+`
+
+export const NickNameInput = styled.input`
+    display: block;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+`
+
+export const ContentInput = styled.input`
+    display: block;
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+`
+
+export const WriteButtonBox = styled.div`
+    width: 30%;
+`
+
+export const WriteButton = styled.div`
+    background-color: #ECECEC;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 6px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+`

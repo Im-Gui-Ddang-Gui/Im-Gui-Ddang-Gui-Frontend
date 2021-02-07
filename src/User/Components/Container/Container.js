@@ -1,14 +1,20 @@
 import React from 'react';
 import * as S from '../styled/ContainerStyle';
 
-const Container = () => {
+const Container = (props) => {
+
+    const onCommentModal = () => {
+        props.setCommentModal("visible");
+        props.setCommentHeight("500px");
+    }
 
     return (
         <>
             <S.ContainerStyle>
+
                 <S.ContainerHeader>
                     <S.HeaderId>
-                        #132
+                        #1
                     </S.HeaderId>
 
                     <S.HeaderTitle>
@@ -31,7 +37,7 @@ const Container = () => {
                     신고하기
                 </S.ReportButton>
 
-                <S.CommentButton>
+                <S.CommentButton onClick={onCommentModal}>
                     댓글보기
                 </S.CommentButton>
                 

@@ -2,18 +2,17 @@ import React from 'react';
 import Container from '../Container/Container';
 import * as S from '../styled/BodyStyle';
 
-const Body = () => {
+const Body = (props) => {
 
     return (
         <>
             <S.BodyStyle>
-                <Container/>
-                <Container/>
-                <Container/>
-                <Container/>
-                <Container/>
-                <Container/>
-                <Container/>
+                <Container 
+                    setCommentModal={(e)=>props.setCommentModal(e)}
+                    setCommentHeight={(e)=>props.setCommentHeight(e)}
+                    commentModal={props.commentModal}
+                    commentheight={props.commentheight}
+                />
             </S.BodyStyle>
         </>
     )

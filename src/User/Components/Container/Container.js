@@ -43,8 +43,6 @@ const Container = (props) => {
                     </S.RightButton>
                 </S.ButtonBox>
 
-                
-                
             </S.ContainerStyle>
         </>
     )

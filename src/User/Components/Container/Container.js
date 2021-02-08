@@ -6,6 +6,7 @@ const Container = (props) => {
     const onCommentModal = () => {
         props.setCommentModal("visible");
         props.setCommentHeight("500px");
+        document.body.style.overflow = "hidden";
     }
 
     return (

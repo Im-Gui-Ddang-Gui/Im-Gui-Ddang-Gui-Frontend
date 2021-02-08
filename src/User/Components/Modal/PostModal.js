@@ -12,6 +12,7 @@ const PostModal = (props) => {
     const onClose = () => {
         props.setPostModal("hidden");
         props.setHeight("0");
+        document.body.style.overflow = "unset"
     }
 
     const onTitle = (e) => {

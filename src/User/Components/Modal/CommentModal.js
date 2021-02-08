@@ -31,16 +31,6 @@ const CommentModal = (props) => {
                     <S.Comment>
                         <S.ContainerBox>
                             <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
-                            <CommentContainer/>
                         </S.ContainerBox>
 
                         <S.CommentWrite>

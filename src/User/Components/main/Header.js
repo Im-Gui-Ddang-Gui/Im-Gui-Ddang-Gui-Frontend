@@ -7,6 +7,7 @@ const Header = (props) => {
     const onPostModalOn = () => {
         props.setPostModal("visible");
         props.setHeight("500px");
+        document.body.style.overflow = "hidden";
     }
 
     return (

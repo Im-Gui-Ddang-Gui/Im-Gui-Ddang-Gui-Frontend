@@ -9,6 +9,7 @@ const CommentModal = (props) => {
     const onClose = () => {
         props.setCommentModal("hidden");
         props.setCommentHeight("0");
+        document.body.style.overflow = "unset"
     }
 
     const onNickName = (e) => {

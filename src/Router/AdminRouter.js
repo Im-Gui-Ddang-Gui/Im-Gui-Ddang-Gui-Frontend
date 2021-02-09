@@ -1,5 +1,6 @@
 import React from 'react';
-import { Switch, Route} from "react-router-dom";
+import { Header } from '../Admin/index';
+import { Switch, Route } from "react-router-dom";
 import {
     Login,
     RemovePost,
@@ -12,6 +13,7 @@ const AdminRouter = () => {
 
     return (
         <>
+            <Header />
             <Switch>
                 <Route path="/admin/login" component={Login} exact />
                 <Route path="/admin/remove-post" component={RemovePost} exact />

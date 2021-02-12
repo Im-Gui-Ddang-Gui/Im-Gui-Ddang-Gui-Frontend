@@ -23,7 +23,7 @@ const RemovePost = () => {
 
     return (
         <>
-            
+            removepost
         </>
     )
 }

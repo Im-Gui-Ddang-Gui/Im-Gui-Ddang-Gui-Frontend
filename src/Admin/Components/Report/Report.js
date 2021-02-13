@@ -23,7 +23,6 @@ const Report = () => {
 
     return (
         <>
-            report
         </>
     )
 }

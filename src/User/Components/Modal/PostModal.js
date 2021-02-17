@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import * as S from '../styled/PostStyle';
-import { request } from '../../../utils/axios/axios'
+import { request }  from '../../../utils/axios/axios';
 
 const PostModal = (props) => {
     const [ writeTitle, setWriteTitle ] = useState(null);
     const [ writeNickName, setWriteNickName ] = useState(null);
     const [ writeContents, setWriteContents] = useState("");
     const [ writeFile, setWriteFile ] = useState("파일선택");
-    const [ writeTag, setWriteTag ] = useState("태그");
+    const [ writeTag, setWriteTag ] = useState("사랑");
+    const [ loading, setLoading ] =useState(false)
+    const [ error, setError ] =useState(null)
+    const [ resData, setResData ] = useState(null)
 
     const onClose = () => {
         props.setPostModal("hidden");
@@ -34,7 +37,7 @@ const PostModal = (props) => {
     const onSendPost = (e) => {
         e.preventDefault();
         console.log(writeContents);
-        //PostApi()
+        PostApi()
     }
 
     const PostApi = async () => {
@@ -44,13 +47,26 @@ const PostModal = (props) => {
             userName: writeNickName,
             content: writeContents
         }
-        const response = await request(
-            "post",
-            "/board",
-            {},
-            data
-        )
+        try{
+            setResData(null)
+            setLoading(true)
+            const response = await request(
+                "post",
+                "/board",
+                {},
+                data
+            )
+            setResData(response.data)
+            setLoading(false)
+            console.log(response)
+        }
+        catch(e){
+            setError(e)
+        }
     }
+
+    if(error) return <div>error</div>
+    if(loading) return <div>loading</div>
 
     return (
         <>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { request } from '../../../utils/axios/axios'
 import * as S from '../styled/ContainerStyle';
 
 const Container = (props) => {
@@ -18,14 +19,14 @@ const Container = (props) => {
 
     const ReportApi = async () => {
         try{
-            setResData(null)
+            setData(null)
             setLoading(true)
             const response = await request(
                 "post",
                 `/report/id`,
                 {},
             )
-            setResData(response.data)
+            setData(response.data)
             setLoading(false)
             console.log(response)
         }

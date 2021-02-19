@@ -17,7 +17,6 @@ const Body = (props) => {
                     "get",
                     "/board?page=1&size=20",
                     {},
-
                 )
                 setData(response.data)
                 setLoading(false)

@@ -35,6 +35,9 @@ const Container = (props) => {
         }
     }
 
+    if(error) return <div>error</div>
+    if(loading) return <div>loading</div>
+
     return (
         <>
             <S.ContainerStyle>

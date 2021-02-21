@@ -10,7 +10,11 @@ const PostContainer = () => {
                     <S.PostTitle>제목</S.PostTitle>
                     <S.PostTag>태그</S.PostTag>
                     <S.PostDate>21.22.22</S.PostDate>
-                    <S.PostRemove>삭제</S.PostRemove>
+                    <S.PostRemove>
+                        <S.PostButton>
+                            삭제
+                        </S.PostButton>
+                    </S.PostRemove>
                 </S.PostHeader>
                 <S.PostContent>내용</S.PostContent>
             </S.PostContainer>

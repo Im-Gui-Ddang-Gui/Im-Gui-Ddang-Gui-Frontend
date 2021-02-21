@@ -50,4 +50,10 @@ export const PostContent = styled.div`
     border: 1px solid black;
     margin: 0 auto;
     margin-top: 10px;
+    overflow: auto;
+`
+
+export const PostButton = styled.div`
+    border: none;
+    cursor: pointer;
 `

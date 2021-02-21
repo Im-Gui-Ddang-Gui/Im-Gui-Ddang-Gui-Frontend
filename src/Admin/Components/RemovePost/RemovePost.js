@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import * as S from '../style/RemovePostStyle';
 import { request } from '../../../utils/axios/axios';
+import PostContainer from './PostContainer';
 
 const RemovePost = () => {
     useEffect(()=>{
@@ -23,7 +25,9 @@ const RemovePost = () => {
 
     return (
         <>
-            removepost
+            <S.RemovePost>
+                <PostContainer />
+            </S.RemovePost> 
         </>
     )
 }

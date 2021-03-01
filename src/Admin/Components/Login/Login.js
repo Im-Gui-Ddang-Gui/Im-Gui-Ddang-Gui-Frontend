@@ -62,6 +62,7 @@ const Login = () => {
                 <S.LogoBox>
                     임 귀 당 귀
                 </S.LogoBox>
+                
                 <S.LoginBox>
                     <S.LoginInput type="text" placeholder="아이디" onChange={onId}/>
 

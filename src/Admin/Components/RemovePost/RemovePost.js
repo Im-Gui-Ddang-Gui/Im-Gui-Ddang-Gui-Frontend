@@ -27,6 +27,9 @@ const RemovePost = () => {
         <>
             <S.RemovePost>
                 <PostContainer />
+                <PostContainer />
+                <PostContainer />
+                <PostContainer />
             </S.RemovePost> 
         </>
     )

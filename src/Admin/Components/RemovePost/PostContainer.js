@@ -16,7 +16,9 @@ const PostContainer = () => {
                         </S.PostButton>
                     </S.PostRemove>
                 </S.PostHeader>
-                <S.PostContent>내용</S.PostContent>
+                <S.PostContent>
+                    내용
+                </S.PostContent>
             </S.PostContainer>
         </>
     )
